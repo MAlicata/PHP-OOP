@@ -10,7 +10,7 @@
     <?php 
         include('Concesionario.php');
 
-        Compra_vehiculo::$ayuda=10000;
+        //Compra_vehiculo::$ayuda=10000;
 
         $compra_Antonio=new Compra_vehiculo('compacto');
 

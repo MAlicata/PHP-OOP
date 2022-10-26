@@ -2,7 +2,7 @@
     class Compra_vehiculo{
         private $precio_base;
 
-        static $ayuda=4500; //no pertecene a ningun objeto del tipo Compra_vehiculo, pertecene a la clase Compra_vehiculo
+        private static $ayuda=4500; //no pertecene a ningun objeto del tipo Compra_vehiculo, pertecene a la clase Compra_vehiculo
 
         //constructor
         function __construct($gama){
