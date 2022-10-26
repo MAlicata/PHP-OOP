@@ -2,7 +2,7 @@
     class Compra_vehiculo{
         private $precio_base;
 
-        private static $ayuda=4500; //no pertecene a ningun objeto del tipo Compra_vehiculo, pertecene a la clase Compra_vehiculo
+        private static $ayuda=0; //no pertecene a ningun objeto del tipo Compra_vehiculo, pertecene a la clase Compra_vehiculo
 
         //constructor
         function __construct($gama){
@@ -12,6 +12,11 @@
                 $this->precio_base=200000;
             }else if($gama=='berlina'){
                 $this->precio_base=300000;
+            }
+        }
+        static function descuento_gobierno(){
+            if(date("m-d-y")>"10-25-2022"){
+                self::$ayuda=4500;
             }
         }
         function climatizador(){
