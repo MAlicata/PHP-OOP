@@ -6,15 +6,12 @@
         $renault = new Coche();
     
         $ford = new Camion();
-    
-        echo "El Renault tiene ". $renault->ruedas. " ruedas <br>";
-    
-        echo "El ford tiene ". $ford->ruedas. " ruedas <br>";
 
-        $ford->frenar();
+   
+        echo "El renault tiene " . $renault->get_ruedas() . " ruedas";
+ 
+        echo "El ford tiene " . $ford->get_ruedas() . " ruedas";
 
-        $ford->establece_color('rojo','camion');
-
-        $ford->arrancar();
+        echo "El renault tiene un de " .$renault->get_motor(). " cc<br>";
 
 ?>
